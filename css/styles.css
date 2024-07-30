@@ -1294,7 +1294,8 @@ padding: 40px 32px;
 }
 
 .links-page {
- text-align: center;   
+ text-align: center; 
+ margin-right: auto;  
 }
 
 .links-footer {
@@ -1412,6 +1413,7 @@ padding: 40px 32px;
 
 .links-page {
     text-align: left;
+    margin-right: auto;  
 }
 
 .footer-text {
@@ -1444,6 +1446,7 @@ padding: 40px 32px;
     margin-right: auto;
     flex-direction: row;
     flex-wrap: nowrap; 
+    gap: 0;
 }
 
 .logo-lin {
@@ -1461,13 +1464,18 @@ padding: 40px 32px;
     max-width: 264px;
 }
 
+.links-page {
+    text-align: left; 
+    margin-right: 80px;  
+   }
+
  .form-label{
     display: flex;
     width: 100%;
  }
 
  .box-footer {
-  margin-left: 80px;  
+
  }
 
 }
