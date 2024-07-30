@@ -1434,18 +1434,12 @@ padding: 40px 32px;
 }
 
 @media screen and (min-width: 1158px) {
-.page-footer {
-    /* padding: 100px 0 100 px 0; */
-}
+
 
 .footer-container {
     max-width: 1158px;
     padding-left: 15px;
     padding-right: 15px;
-    /* margin-left: auto;
-    margin-right: auto;
-    flex-direction: row;
-    flex-wrap: nowrap;  */
     gap: 0;
 }
 
@@ -1466,16 +1460,7 @@ padding: 40px 32px;
 
 .links-page {
     text-align: left; 
-    /* margin-right: 80px;   */
    }
 
- .form-label{
-    /* display: flex;
-    width: 100%; */
- }
-
- .box-footer {
-
- }
 
 }
