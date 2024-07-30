@@ -1212,7 +1212,7 @@ padding: 40px 32px;
    }
 }
 
-backdrop {
+.backdrop {
     position: fixed; 
     top: 0; 
     left: 0;
@@ -1234,11 +1234,13 @@ backdrop {
 }
 
 .modal {
-    padding: 72px 16px 24px 16px;   
+    padding: 72px 16px 24px 16px;
+    /* overflow-y: auto;  */
      position: absolute; 
      top: 50%;
      left: 50%;
-     width: 288px;
+     max-width: 288px;
+     width: 100%;
     min-height: 623px;
     border-radius: 4px;
     transform: translate(-50%, -50%);
@@ -1250,10 +1252,10 @@ backdrop {
     }
 
     .backdrop:not(.is-open) .modal {
-        transform:  translate(-50%, -50%) scale(1.5);
+        transform: translate(-50%, -50%) scale(1.5);
     }
     
-    .mod-close-btn {
+    .modal-close-btn {
         top: 24px;
         right: 24px;
         width: 24px;
@@ -1469,17 +1471,19 @@ backdrop {
     }
 
     @media screen and (min-width: 768px) {
-      .modal {
-        padding: 72px 24px 24px 24px;
-        width: 408px;
-        min-height: 584px;
-      }  
+        .modal {
+            padding: 72px 24px 24px 24px;
+            min-width: 408px;
+            width: 100%;
+            min-height: 584px;
+        }
     }
 
     @media screen and (min-width: 1158px) {
         .modal {
-          padding: 72px 24px 24px 24px;
-          width: 408px;
-          min-height: 584px;
-        }  
-      }
+            padding: 72px 24px 24px 24px;
+            min-width: 408px;
+            width: 100%;
+            min-height: 584px;
+        }
+    }
